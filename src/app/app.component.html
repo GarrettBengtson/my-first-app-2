@@ -1,0 +1,20 @@
+<div class="container">
+  <!-- <p>Name is {{name}}</p>
+  <div>
+    <button (click)="changeTheName()">Change Name</button>
+  </div>
+  <div>
+    <input (keyup)=>
+  </div> -->
+
+  
+  <div>
+    <button (click)="changeToRed()">Change to Red</button>
+    <button (click)="changeToBlue()">Change to Blue</button>
+  </div>
+
+  <input type="text" [(ngModel)]="username">
+  <p [class.red]="isRed" [class.blue]="isBlue">Username is {{username}}</p>
+  <button [disabled]="isEmpty()" (click)="reset()">Click Me!</button>
+</div>
+
